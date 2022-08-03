@@ -4,42 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
 <!-- Header -->
-<header class="main-header">
-  <a class="main-header__logo">
+<header class="header">
+  <a class="header__logo">
     <img src="img/logo.svg" width="185" height="96" alt="Седона">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
+  <nav class="navigation">
+    <button class="navigation__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
+    <ul class="navigation__list">
+      <li class="navigation__item">
         <a href="index.html">Главная</a>
       </li>
-      <li class="main-nav__item">
+      <li class="navigation__item">
         <a href="catalog.html">Фото и видео</a>
       </li>
-      <li class="main-nav__item main-nav__item--current">
+      <li class="navigation__item navigation__item--current">
         <a>Форма отзыва</a>
       </li>
-      <li class="main-nav__item">
+      <li class="navigation__item">
         <a href="https://htmlacademy.ru/">HTML Academy</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="main-container">
+<main class="main">
   <h1 class="visually-hidden">Форма отзыва</h1>
   <!-- Hero -->
-  <section class="inner-hero">
-    <h2 class="visually-hidden">Седона</h2>
-    <img class="inner-hero__image" src="img/sedona.svg" width="229" height="39" alt="Sedona!">
-  </section>
+  <div class="hero hero--inner">
+    <img class="hero__image" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+  </div>
   <!-- Form -->
   <section class="review">
     <h2 class="review__title">Оставьте свой отзыв</h2>
@@ -47,78 +47,78 @@
       Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях
     </p>
     <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="review__fieldset review-group review-group--name">
-        <legend class="review-group__title">Представьтесь:</legend>
-        <ul class="review-group__list">
-          <li class="review-group__item">
-            <label class="review-group__label" for="first-name">Имя*:</label>
-            <input class="review-group__input" name="first-name" id="first-name" placeholder="Имя" type="text" required>
+      <fieldset class="review__fieldset field-group field-group--name">
+        <legend class="field-group__title">Представьтесь:</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item">
+            <label class="field-group__label" for="first-name">Имя*:</label>
+            <input class="field-group__input" name="first-name" id="first-name" placeholder="Имя" type="text" required>
           </li>
-          <li class="review-group__item">
-            <label class="review-group__label" for="last-name">Фамилия*:</label>
-            <input class="review-group__input" name="last-name" id="last-name" placeholder="Фамилия" type="text" required>
+          <li class="field-group__item">
+            <label class="field-group__label" for="last-name">Фамилия*:</label>
+            <input class="field-group__input" name="last-name" id="last-name" placeholder="Фамилия" type="text" required>
           </li>
-          <li class="review-group__item">
-            <label class="review-group__label" for="middle-name">Отчество:</label>
-            <input class="review-group__input" name="middle-name" id="middle-name" placeholder="Отчество" type="text">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="review__fieldset review-group review-group--contacts">
-        <legend class="review-group__title">Контактная информация:</legend>
-        <ul class="review-group__list">
-          <li class="review-group__item">
-            <label class="review-group__label" for="phone">Контактный телефон*:</label>
-            <input class="review-group__input contacts contacts__phone" name="phone" id="phone" placeholder="Введите телефон" type="tel" required>
-          </li>
-          <li class="review-group__item">
-            <label class="review-group__label" for="email">Электронная почта*:</label>
-            <input class="review-group__input contacts contacts__phone" name="email" id="email" placeholder="Введите e-mail" type="email" required>
+          <li class="field-group__item">
+            <label class="field-group__label" for="middle-name">Отчество:</label>
+            <input class="field-group__input" name="middle-name" id="middle-name" placeholder="Отчество" type="text">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review__fieldset review-group review-group--impression">
-        <legend class="review-group__title">Ваше общее впечатление:</legend>
-        <ul class="review-group__list">
-          <li class="review-group__item review-group__item--radio">
-            <input class="review-group__input" name="impression" id="positive" type="radio" checked>
-            <label class="review-group__label" for="positive">Скорее положительное</label>
+      <fieldset class="review__fieldset field-group field-group--contacts">
+        <legend class="field-group__title">Контактная информация:</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item">
+            <label class="field-group__label" for="phone">Контактный телефон*:</label>
+            <input class="field-group__input contacts contacts__phone" name="phone" id="phone" placeholder="Введите телефон" type="tel" required>
           </li>
-          <li class="review-group__item review-group__item--radio">
-            <input class="review-group__input" name="impression" id="negative" type="radio">
-            <label class="review-group__label" for="negative">Скорее отрицательное</label>
-          </li>
-          <li class="review-group__item review-group__item--radio">
-            <input class="review-group__input" name="impression" id="indifferent" type="radio">
-            <label class="review-group__label" for="indifferent">Затрудняюсь ответить</label>
+          <li class="field-group__item">
+            <label class="field-group__label" for="email">Электронная почта*:</label>
+            <input class="field-group__input contacts contacts__phone" name="email" id="email" placeholder="Введите e-mail" type="email" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review__fieldset review-group review-group--visited-places">
-        <legend class="review-group__title">Посещённые достопримечательности:</legend>
-        <ul class="review-group__list">
-          <li class="review-group__item review-group__item--checkbox">
-            <input class="review-group__input" name="visited-places" id="bridge" type="checkbox" checked>
-            <label class="review-group__label" for="bridge">Мост Дьявола</label>
+      <fieldset class="review__fieldset field-group field-group--impression">
+        <legend class="field-group__title">Ваше общее впечатление:</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item field-group__item--radio">
+            <input class="field-group__input" name="impression" id="positive" type="radio" checked>
+            <label class="field-group__label" for="positive">Скорее положительное</label>
           </li>
-          <li class="review-group__item review-group__item--checkbox">
-            <input class="review-group__input" name="visited-places" id="mountain" type="checkbox" checked>
-            <label class="review-group__label" for="mountain">Гора-Колокол</label>
+          <li class="field-group__item field-group__item--radio">
+            <input class="field-group__input" name="impression" id="negative" type="radio">
+            <label class="field-group__label" for="negative">Скорее отрицательное</label>
           </li>
-          <li class="review-group__item review-group__item--checkbox">
-            <input class="review-group__input" name="visited-places" id="park" type="checkbox" checked>
-            <label class="review-group__label" for="park">Слайд-парк</label>
-          </li>
-          <li class="review-group__item review-group__item--checkbox">
-            <input class="review-group__input" name="visited-places" id="redrocks" type="checkbox">
-            <label class="review-group__label" for="redrocks">Красные скалы</label>
+          <li class="field-group__item field-group__item--radio">
+            <input class="field-group__input" name="impression" id="indifferent" type="radio">
+            <label class="field-group__label" for="indifferent">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review__fieldset review-group review-group--emotions">
-        <legend class="review-group__title">Опишите свои эмоции:</legend>
-        <div class="review-group__item review-group__item--textarea">
-          <textarea class="review-group__textarea" name="emotions" id="emotions" rows="10" cols="40"></textarea>
+      <fieldset class="review__fieldset field-group field-group--visited-places">
+        <legend class="field-group__title">Посещённые достопримечательности:</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item field-group__item--checkbox">
+            <input class="field-group__input" name="visited-places" id="bridge" type="checkbox" checked>
+            <label class="field-group__label" for="bridge">Мост Дьявола</label>
+          </li>
+          <li class="field-group__item field-group__item--checkbox">
+            <input class="field-group__input" name="visited-places" id="mountain" type="checkbox" checked>
+            <label class="field-group__label" for="mountain">Гора-Колокол</label>
+          </li>
+          <li class="field-group__item field-group__item--checkbox">
+            <input class="field-group__input" name="visited-places" id="park" type="checkbox" checked>
+            <label class="field-group__label" for="park">Слайд-парк</label>
+          </li>
+          <li class="field-group__item field-group__item--checkbox">
+            <input class="field-group__input" name="visited-places" id="redrocks" type="checkbox">
+            <label class="field-group__label" for="redrocks">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="review__fieldset field-group field-group--emotions">
+        <legend class="field-group__title">Опишите свои эмоции:</legend>
+        <div class="field-group__item field-group__item--textarea">
+          <textarea class="field-group__textarea" name="emotions" id="emotions" rows="10" cols="40"></textarea>
         </div>
       </fieldset>
       <div class="review__footer">
@@ -130,26 +130,26 @@
 </main>
 
 <!-- Footer -->
-<footer class="main-footer">
-  <p class="main-footer__hashtag">#visitsedona</p>
-  <ul class="main-footer__list social">
-    <li class="main-footer__item">
+<footer class="footer">
+  <p class="footer__hashtag">#visitsedona</p>
+  <ul class="footer__list social">
+    <li class="footer__item social__item">
       <a class="social__link social__link--vkontakte" href="#">
         <span class="visually-hidden">Вконтакте</span>
       </a>
     </li>
-    <li class="main-footer__item">
+    <li class="footer__item social__item">
       <a class="social__link social__link--telegram" href="#">
         <span class="visually-hidden">Телеграм</span>
       </a>
     </li>
-    <li class="main-footer__item">
+    <li class="footer__item social__item">
       <a class="social__link social__link--youtube" href="#">
         <span class="visually-hidden">Ютьюб</span>
       </a>
     </li>
   </ul>
-  <div class="main-footer__copyright">
+  <div class="footer__copyright copyright">
     <p class="copyright__text">HTML Academy</p>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <img class="copyright__image" src="img/htmlacademy.svg" width="16" height="16" alt="Логотип HTML Academy">
