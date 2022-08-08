@@ -1,0 +1,20 @@
+.navigation {
+
+}
+
+.navigation__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #81b3d2;
+}
+
+.navigation__toggle {
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  font-size: 0;
+}
