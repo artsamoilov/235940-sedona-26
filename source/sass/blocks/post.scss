@@ -1,0 +1,30 @@
+.post {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.post__author {
+  text-transform: none;
+}
+
+.post__like {
+  display: flex;
+  align-items: center;
+}
+
+.post__like-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/like.svg");
+  cursor: pointer;
+}
+
+.post__like-counter {
+  padding: 8px 4px 0;
+  font-weight: 700;
+}
