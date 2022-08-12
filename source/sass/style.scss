@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@use "global/fonts";
+@use "global/variables";
+@use "global/mixins";
+@use "blocks/page";
+@use "blocks/header";
+@use "blocks/navigation";
+@use "blocks/main";
+@use "blocks/hero";
+@use "blocks/features";
+@use "blocks/feature";
+@use "blocks/booking";
+@use "blocks/map";
+@use "blocks/footer";
+@use "blocks/social";
+@use "blocks/copyright";
+@use "blocks/gallery";
+@use "blocks/post";
+@use "blocks/presentation";
+@use "blocks/review";
+@use "blocks/field-group";
+@use "blocks/button";
+@use "blocks/modal";
+@use "blocks/contacts";

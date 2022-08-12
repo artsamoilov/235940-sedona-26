@@ -4,51 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
 <!-- Header -->
-<header class="main-header">
-  <a class="main-header__logo">
+<header class="header">
+  <a class="header__logo">
     <img src="img/logo.svg" width="185" height="96" alt="Седона">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
+  <nav class="navigation">
+    <button class="navigation__toggle navigation__toggle--opened" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item main-nav__item--current">
-        <a>Главная</a>
+    <ul class="navigation__list">
+      <li class="navigation__item navigation__item--current">
+        <a class="navigation__link">Главная</a>
       </li>
-      <li class="main-nav__item">
-        <a href="catalog.html">Фото и видео</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="catalog.html">Фото и видео</a>
       </li>
-      <li class="main-nav__item">
-        <a href="form.html">Форма отзыва</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="form.html">Форма отзыва</a>
       </li>
-      <li class="main-nav__item">
-        <a href="https://htmlacademy.ru/">HTML Academy</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="main-container">
+<main class="main">
   <h1 class="visually-hidden">Седона</h1>
   <!-- Hero -->
-  <section class="main-hero">
-    <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-    <img class="main-hero__image" src="img/text-index.svg" width="282" height="214" alt="Because the Grand Canyon sucks!">
-  </section>
+  <div class="hero">
+    <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Because the Grand Canyon sucks!">
+  </div>
   <!-- Features -->
   <section class="features">
     <header class="features__header">
       <h2 class="visually-hidden">Преимущества города</h2>
-      <p class="features__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+      <p class="features__title">Седона — небольшой городок&nbsp;в Аризоне,<br>заслуживающий большего!</p>
       <p class="features__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </header>
     <ul class="features__list">
-      <li class="features__item feature feature__accent">
+      <li class="features__item feature feature--accent">
         <h3 class="feature__title">Настоящий городок</h3>
         <p class="feature__counter">— №1 —</p>
         <p class="feature__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
@@ -66,7 +66,7 @@
         <h3 class="feature__title">Сувениры</h3>
         <p class="feature__text">Не только китайского, но и местного производства!</p>
       </li>
-      <li class="features__item feature feature__accent feature__accent--flipped">
+      <li class="features__item feature feature--accent feature--flipped">
         <h3 class="feature__title">Там есть мост дьявола</h3>
         <p class="feature__counter">— №2 —</p>
         <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -105,29 +105,29 @@
 </main>
 
 <!-- Footer -->
-<footer class="main-footer">
-  <p class="main-footer__hashtag">#visitsedona</p>
-  <ul class="main-footer__list social">
-    <li class="main-footer__item">
+<footer class="footer">
+  <p class="footer__hashtag">#visitsedona</p>
+  <ul class="footer__list social">
+    <li class="social__item">
       <a class="social__link social__link--vkontakte" href="#">
-        <span class="visually-hidden">Вконтакте</span>
+        <img class="social__image" src="img/vk.svg" width="24" height="24" alt="Вконтакте">
       </a>
     </li>
-    <li class="main-footer__item">
+    <li class="social__item">
       <a class="social__link social__link--telegram" href="#">
-        <span class="visually-hidden">Телеграм</span>
+        <img class="social__image" src="img/telegram.svg" width="24" height="24" alt="Телеграм">
       </a>
     </li>
-    <li class="main-footer__item">
+    <li class="social__item">
       <a class="social__link social__link--youtube" href="#">
-        <span class="visually-hidden">Ютьюб</span>
+        <img class="social__image" src="img/youtube.svg" width="24" height="24" alt="Ютьюб">
       </a>
     </li>
   </ul>
-  <div class="main-footer__copyright">
-    <p class="copyright__text">HTML Academy</p>
+  <div class="footer__copyright copyright">
+    <p class="copyright__text">Разработано</p>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="copyright__image" src="img/htmlacademy.svg" width="16" height="16" alt="Логотип HTML Academy">
+      <img class="copyright__image" src="img/htmlacademy.svg" width="32" height="32" alt="Логотип HTML Academy">
     </a>
   </div>
 </footer>
