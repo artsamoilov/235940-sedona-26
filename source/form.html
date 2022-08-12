@@ -47,80 +47,90 @@
       Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях
     </p>
     <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="review__fieldset field-group field-group--name">
-        <legend class="field-group__title">Представьтесь:</legend>
-        <ul class="field-group__list">
-          <li class="field-group__item">
-            <label class="field-group__label" for="first-name">Имя*:</label>
-            <input class="field-group__input" name="first-name" id="first-name" placeholder="Имя" type="text" required>
-          </li>
-          <li class="field-group__item">
-            <label class="field-group__label" for="last-name">Фамилия*:</label>
-            <input class="field-group__input" name="last-name" id="last-name" placeholder="Фамилия" type="text" required>
-          </li>
-          <li class="field-group__item">
-            <label class="field-group__label" for="middle-name">Отчество:</label>
-            <input class="field-group__input" name="middle-name" id="middle-name" placeholder="Отчество" type="text">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="review__fieldset field-group field-group--contacts">
-        <legend class="field-group__title">Контактная информация:</legend>
-        <ul class="field-group__list">
-          <li class="field-group__item">
-            <label class="field-group__label" for="phone">Контактный телефон*:</label>
-            <input class="field-group__input contacts contacts__phone" name="phone" id="phone" placeholder="Введите телефон" type="tel" required>
-          </li>
-          <li class="field-group__item">
-            <label class="field-group__label" for="email">Электронная почта*:</label>
-            <input class="field-group__input contacts contacts__phone" name="email" id="email" placeholder="Введите e-mail" type="email" required>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="review__fieldset field-group field-group--impression">
-        <legend class="field-group__title">Ваше общее впечатление:</legend>
-        <ul class="field-group__list">
-          <li class="field-group__item field-group__item--radio">
-            <input class="field-group__input" name="impression" id="positive" type="radio" checked>
-            <label class="field-group__label" for="positive">Скорее положительное</label>
-          </li>
-          <li class="field-group__item field-group__item--radio">
-            <input class="field-group__input" name="impression" id="negative" type="radio">
-            <label class="field-group__label" for="negative">Скорее отрицательное</label>
-          </li>
-          <li class="field-group__item field-group__item--radio">
-            <input class="field-group__input" name="impression" id="indifferent" type="radio">
-            <label class="field-group__label" for="indifferent">Затрудняюсь ответить</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="review__fieldset field-group field-group--visited-places">
-        <legend class="field-group__title">Посещённые достопримечательности:</legend>
-        <ul class="field-group__list">
-          <li class="field-group__item field-group__item--checkbox">
-            <input class="field-group__input" name="visited-places" id="bridge" type="checkbox" checked>
-            <label class="field-group__label" for="bridge">Мост Дьявола</label>
-          </li>
-          <li class="field-group__item field-group__item--checkbox">
-            <input class="field-group__input" name="visited-places" id="mountain" type="checkbox" checked>
-            <label class="field-group__label" for="mountain">Гора-Колокол</label>
-          </li>
-          <li class="field-group__item field-group__item--checkbox">
-            <input class="field-group__input" name="visited-places" id="park" type="checkbox" checked>
-            <label class="field-group__label" for="park">Слайд-парк</label>
-          </li>
-          <li class="field-group__item field-group__item--checkbox">
-            <input class="field-group__input" name="visited-places" id="redrocks" type="checkbox">
-            <label class="field-group__label" for="redrocks">Красные скалы</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="review__fieldset field-group field-group--emotions">
-        <legend class="field-group__title">Опишите свои эмоции:</legend>
-        <div class="field-group__item field-group__item--textarea">
-          <textarea class="field-group__textarea" name="emotions" id="emotions" rows="10" cols="40"></textarea>
-        </div>
-      </fieldset>
+      <div class="review__group-wrapper">
+        <fieldset class="review__fieldset field-group field-group--name">
+          <legend class="field-group__title">Представьтесь:</legend>
+          <ul class="field-group__list">
+            <li class="field-group__item">
+              <label class="field-group__label" for="first-name">Имя*:</label>
+              <input class="field-group__input" name="first-name" id="first-name" placeholder="Имя" type="text" required>
+            </li>
+            <li class="field-group__item">
+              <label class="field-group__label" for="last-name">Фамилия*:</label>
+              <input class="field-group__input" name="last-name" id="last-name" placeholder="Фамилия" type="text" required>
+            </li>
+            <li class="field-group__item">
+              <label class="field-group__label" for="middle-name">Отчество:</label>
+              <input class="field-group__input" name="middle-name" id="middle-name" placeholder="Отчество" type="text">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="review__group-wrapper">
+        <fieldset class="review__fieldset field-group field-group--contacts">
+          <legend class="field-group__title">Контактная информация:</legend>
+          <ul class="field-group__list">
+            <li class="field-group__item contacts contacts__phone">
+              <label class="field-group__label" for="phone">Контактный телефон*:</label>
+              <input class="field-group__input" name="phone" id="phone" placeholder="Введите телефон" type="tel" required>
+            </li>
+            <li class="field-group__item contacts contacts__email">
+              <label class="field-group__label" for="email">Электронная почта*:</label>
+              <input class="field-group__input" name="email" id="email" placeholder="Введите e-mail" type="email" required>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="review__group-wrapper">
+        <fieldset class="review__fieldset field-group field-group--impression">
+          <legend class="field-group__title">Ваше общее впечатление:</legend>
+          <ul class="field-group__list">
+            <li class="field-group__item field-group__item--radio">
+              <input class="field-group__input visually-hidden" value="positive" name="impression" id="positive" type="radio" checked>
+              <label class="field-group__label field-group__radio" for="positive">Скорее положительное</label>
+            </li>
+            <li class="field-group__item field-group__item--radio">
+              <input class="field-group__input visually-hidden" value="negative" name="impression" id="negative" type="radio">
+              <label class="field-group__label field-group__radio" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="field-group__item field-group__item--radio">
+              <input class="field-group__input visually-hidden" value="indifferent" name="impression" id="indifferent" type="radio">
+              <label class="field-group__label field-group__radio" for="indifferent">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="review__group-wrapper">
+        <fieldset class="review__fieldset field-group field-group--visited-places">
+          <legend class="field-group__title">Посещённые достопримечательности:</legend>
+          <ul class="field-group__list">
+            <li class="field-group__item field-group__item--checkbox">
+              <input class="field-group__input visually-hidden" value="bridge" name="visited-places" id="bridge" type="checkbox" checked>
+              <label class="field-group__label field-group__checkbox" for="bridge">Мост Дьявола</label>
+            </li>
+            <li class="field-group__item field-group__item--checkbox">
+              <input class="field-group__input visually-hidden" value="mountain" name="visited-places" id="mountain" type="checkbox" checked>
+              <label class="field-group__label field-group__checkbox" for="mountain">Гора-Колокол</label>
+            </li>
+            <li class="field-group__item field-group__item--checkbox">
+              <input class="field-group__input visually-hidden" value="park" name="visited-places" id="park" type="checkbox" checked>
+              <label class="field-group__label field-group__checkbox" for="park">Слайд-парк</label>
+            </li>
+            <li class="field-group__item field-group__item--checkbox">
+              <input class="field-group__input visually-hidden" value="redrocks" name="visited-places" id="redrocks" type="checkbox">
+              <label class="field-group__label field-group__checkbox" for="redrocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="review__group-wrapper">
+        <fieldset class="review__fieldset field-group field-group--emotions">
+          <legend class="field-group__title">Опишите свои эмоции:</legend>
+          <div class="field-group__item field-group__item--textarea">
+            <textarea class="field-group__textarea" placeholder="Опишите подробно все свои восторги" name="emotions" id="emotions" rows="4" cols="10"></textarea>
+          </div>
+        </fieldset>
+      </div>
       <div class="review__footer">
         <button class="review__button button" type="submit">Отправить отзыв</button>
         <small class="review__info">* — обязательные поля</small>
@@ -163,7 +173,7 @@
   <p class="modal__subtitle">
     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
   </p>
-  <button class="modal__close button" type="button">Ок</button>
+  <button class="modal__button modal__button--simple button" type="button">Ок</button>
 </section>
 
 <!-- Modal success -->
@@ -173,7 +183,7 @@
     Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
   </p>
   <div class="modal__button-wrapper">
-    <button class="modal__close button" type="button">Закрыть окно</button>
+    <button class="modal__button button" type="button">Закрыть окно</button>
   </div>
 </section>
 

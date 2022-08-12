@@ -1,0 +1,28 @@
+.contacts {
+  position: relative;
+  margin-right: 58px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: -58px;
+    width: 58px;
+    height: 58px;
+    content: "";
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__phone {
+  &::after {
+    background-image: url("../img/phone.svg");
+  }
+}
+
+.contacts__email {
+  &::after {
+    background-image: url("../img/mail.svg");
+  }
+}

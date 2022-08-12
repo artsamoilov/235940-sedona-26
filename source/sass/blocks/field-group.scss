@@ -1,0 +1,151 @@
+.field-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.field-group__title {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  max-width: calc(100vw - 40px);
+  list-style: none;
+}
+
+.field-group__item {
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  &--radio,
+  &--checkbox {
+    flex-direction: row;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.field-group__label {
+  padding: 0 0 0 16px;
+}
+
+.field-group__input {
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:checked + .field-group__radio::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+  }
+
+  &:checked + .field-group__checkbox::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 12px;
+    width: 22px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/tick.svg");
+  }
+}
+
+.field-group__radio {
+  position: relative;
+  padding: 10px 0 10px 62px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+}
+
+.field-group__checkbox {
+  position: relative;
+  padding: 10px 0 10px 62px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+}
+
+.field-group__textarea {
+  box-sizing: border-box;
+  padding: 16px;
+  height: 150px;
+  resize: vertical;
+  border: none;
+  background-color: #f2f2f2;
+  overflow: auto;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review__footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__info {
+  margin: 4px 0;
+  align-self: end;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.6);
+}
