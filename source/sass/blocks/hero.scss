@@ -1,13 +1,41 @@
+@import "../global/variables";
+
 .hero {
+  z-index: -1;
+  position: relative;
   background-color: #7c97a3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("/img/back-mobile.jpg");
-  padding: 90px 0 85px;
+  padding: 90px 20px 85px;
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    height: 57px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/img/intro-triangle.svg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("/img/back-desktop.jpg");
+    padding: 78px 20px 90px;
+  }
 }
 
 .hero__image {
   display: block;
+  height: 214px;
+  width: auto;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    height: 350px;
+  }
 }
