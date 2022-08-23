@@ -33,6 +33,7 @@
   }
 
   @media (min-width: $tablet) {
+    max-width: 100%;
     position: unset;
     display: flex;
     flex-direction: row;
@@ -61,16 +62,16 @@
   }
 
   @media (min-width: $tablet) {
-    min-width: calc(20vw - 1px);
+    min-width: calc(20% - 1px);
     box-shadow: none;
     flex-grow: 1;
 
     &:nth-child(2) {
-      margin-right: 20vw;
+      margin-right: 20%;
     }
 
     &:nth-child(6) {
-      margin-right: 20vw;
+      margin-right: 20%;
     }
 
     &:first-child, &:last-child {
