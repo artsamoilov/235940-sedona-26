@@ -2,6 +2,15 @@
 
 .presentation {
   padding: 16px 20px 0;
+
+  @media (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
 
 .presentation__title {
@@ -57,5 +66,7 @@
 
   @media (min-width: $tablet) {
     height: 500px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
