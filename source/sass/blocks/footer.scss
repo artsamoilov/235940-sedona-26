@@ -9,6 +9,11 @@
     align-items: center;
     padding: 36px 60px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .footer__hashtag {

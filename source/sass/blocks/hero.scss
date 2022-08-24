@@ -1,7 +1,6 @@
 @import "../global/variables";
 
 .hero {
-  z-index: -1;
   position: relative;
   background-color: #7c97a3;
   background-repeat: no-repeat;
@@ -9,6 +8,16 @@
   background-position: center;
   background-image: url("/img/back-mobile.jpg");
   padding: 90px 20px 85px;
+
+  &--inner {
+    background-position: bottom;
+    margin: 0;
+    padding: 52px 20px 68px;
+
+    .hero__image {
+      height: 40px;
+    }
+  }
 
   &::after {
     position: absolute;
