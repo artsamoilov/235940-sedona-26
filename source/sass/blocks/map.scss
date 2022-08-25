@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.map__static-map {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 .map__pin {
   position: absolute;
   top: calc(50% - 14px);

@@ -1,5 +1,19 @@
+@import "../global/variables";
+
 .footer {
   padding: 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .footer__hashtag {
@@ -11,4 +25,9 @@
 
 .footer__list {
   margin: 34px auto 40px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

@@ -1,7 +1,89 @@
+@import "../global/variables";
+
 .field-group {
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet) {
+    &--name {
+      margin-right: 40px;
+
+      .field-group__title {
+        padding-left: 20px;
+      }
+    }
+
+    &--contacts {
+      margin-left: 40px;
+
+      .field-group__title {
+        padding-right: 20px;
+      }
+    }
+
+    &--impression,
+    &--visited-places,
+    &--emotions {
+      .field-group__title {
+        position: relative;
+        width: 380px;
+        padding: 0 10px;
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          top: 50%;
+          background-color: #dbdbdb;
+        }
+
+        &::before {
+          right: 100%;
+        }
+
+        &::after {
+          left: 100%;
+        }
+      }
+
+      .field-group__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 36px;
+        gap: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--name {
+      margin-right: 64px;
+
+      .field-group__title {
+        padding-left: 32px;
+      }
+    }
+
+    &--contacts {
+      margin-left: 64px;
+
+      .field-group__title {
+        padding-right: 32px;
+      }
+    }
+
+    &--impression,
+    &--visited-places,
+    &--emotions {
+      .field-group__list {
+        padding: 0 52px;
+        gap: 16px 0;
+      }
+    }
+  }
 }
 
 .field-group__title {
@@ -11,6 +93,11 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 28px;
+    font-size: 20px;
+  }
 }
 
 .field-group__list {
@@ -28,15 +115,49 @@
   &--radio,
   &--checkbox {
     flex-direction: row;
+
+    @media (min-width: $tablet) {
+      width: calc(50% - 8px);
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: auto;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    &--radio {
+      width: 30%;
+    }
+
+    &--checkbox {
+      width: 22%;
+    }
+
+    &--textarea {
+      max-width: $tablet;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 
 .field-group__label {
   padding: 0 0 0 16px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .field-group__input {
@@ -50,6 +171,22 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus + .field-group__label::before {
+    background-color: #e5e5e5;
+    outline-offset: 1px;
+    outline: rgb(0, 95, 204) auto 1px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
   }
 
   &:checked + .field-group__radio::after {
@@ -95,6 +232,30 @@
     border-radius: 50%;
     background-color: #f2f2f2;
   }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 15px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #333333;
+      opacity: 0.3;
+    }
+  }
 }
 
 .field-group__checkbox {
@@ -116,6 +277,22 @@
     border-radius: 4px;
     background-color: #f2f2f2;
   }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .field-group__textarea {
@@ -134,18 +311,14 @@
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
-}
 
-.review__footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  &:hover {
+    background-color: #e5e5e5;
+  }
 
-.review__info {
-  margin: 4px 0;
-  align-self: end;
-  font-size: 12px;
-  line-height: 22px;
-  color: rgba(51, 51, 51, 0.6);
+  &:focus {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 }
