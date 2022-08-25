@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon-32.png">
 </head>
 <body class="page__body">
   <div class="page__wrapper">
@@ -26,7 +27,7 @@
             <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__link">Форма отзыва</a>
+            <a class="navigation__link navigation__link--current">Форма отзыва</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -87,7 +88,7 @@
               <legend class="field-group__title">Ваше общее впечатление:</legend>
               <ul class="field-group__list">
                 <li class="field-group__item field-group__item--radio">
-                  <input class="field-group__input visually-hidden" value="positive" name="impression" id="positive" type="radio" checked>
+                  <input class="field-group__input field-group__input--radio visually-hidden" value="positive" name="impression" id="positive" type="radio" checked>
                   <label class="field-group__label field-group__radio" for="positive">Скорее положительное</label>
                 </li>
                 <li class="field-group__item field-group__item--radio">
@@ -160,12 +161,10 @@
           </a>
         </li>
       </ul>
-      <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/htmlacademy.svg" width="32" height="32" alt="Логотип HTML Academy">
-        </a>
-      </div>
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <img class="copyright__image" src="img/htmlacademy.svg" width="36" height="36" alt="Логотип HTML Academy">
+      </a>
     </footer>
 
   </div>

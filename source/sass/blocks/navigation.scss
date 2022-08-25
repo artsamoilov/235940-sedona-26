@@ -25,6 +25,7 @@
   }
 
   &::after {
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -91,7 +92,7 @@
 
 .navigation__link {
   display: block;
-  padding: 16px 56px 12px;
+  padding: 16px 56px 13px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -99,10 +100,38 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:focus, &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet) {
     padding: 17px;
     font-size: 14px;
     line-height: 22px;
+    background-color: transparent;
+
+    &:focus, &:hover, &:active {
+      background-color: transparent;
+    }
+
+    &:focus, &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--current {
+      &:focus, &:hover, &:active {
+        color: #766357;
+      }
+    }
   }
 }
 
@@ -124,6 +153,14 @@
 
   &--opened {
     background-image: url("../img/icon-cross.svg");
+  }
+
+  &:focus, &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {

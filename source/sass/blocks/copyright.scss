@@ -1,6 +1,16 @@
 .copyright {
   display: flex;
-  gap: 10px;
+  gap: 4px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover, &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

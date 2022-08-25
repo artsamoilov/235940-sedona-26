@@ -34,15 +34,10 @@
 }
 
 .booking__link {
+  box-sizing: border-box;
   display: block;
-  padding: 16px;
   text-align: center;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   text-decoration: none;
-  background-color: #81b3d2;
-  color: #ffffff;
 
   @media (min-width: $tablet) {
     max-width: 458px;

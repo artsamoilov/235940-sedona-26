@@ -61,7 +61,8 @@
     &--wide {
       overflow-x: hidden;
       width: 100%;
-      padding: 0;
+      padding: 0 0 2px;
+      margin-bottom: 46px;
     }
 
     &:first-child {

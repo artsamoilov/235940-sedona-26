@@ -168,6 +168,22 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:focus + .field-group__label::before {
+    background-color: #e5e5e5;
+    outline-offset: 1px;
+    outline: rgb(0, 95, 204) auto 1px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+
   &:checked + .field-group__radio::after {
     position: absolute;
     content: "";
@@ -211,6 +227,30 @@
     border-radius: 50%;
     background-color: #f2f2f2;
   }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 15px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #333333;
+      opacity: 0.3;
+    }
+  }
 }
 
 .field-group__checkbox {
@@ -232,6 +272,22 @@
     border-radius: 4px;
     background-color: #f2f2f2;
   }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .field-group__textarea {
@@ -249,5 +305,15 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
   }
 }
