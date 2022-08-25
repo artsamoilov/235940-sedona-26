@@ -76,7 +76,8 @@
       margin-right: 20%;
     }
 
-    &:first-child, &:last-child {
+    &:first-child,
+    &:last-child {
       box-shadow: none;
     }
 
@@ -100,7 +101,8 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: #669ec0;
   }
 
@@ -115,11 +117,14 @@
     line-height: 22px;
     background-color: transparent;
 
-    &:focus, &:hover, &:active {
+    &:focus,
+    &:hover,
+    &:active {
       background-color: transparent;
     }
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: #81b3d2;
     }
 
@@ -128,7 +133,9 @@
     }
 
     &--current {
-      &:focus, &:hover, &:active {
+      &:focus,
+      &:hover,
+      &:active {
         color: #766357;
       }
     }
@@ -155,7 +162,8 @@
     background-image: url("../img/icon-cross.svg");
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     opacity: 0.6;
   }
 
