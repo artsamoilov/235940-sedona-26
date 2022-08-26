@@ -3,6 +3,21 @@
 .navigation {
   z-index: 2;
   position: relative;
+
+  &--no-js {
+    .navigation__toggle {
+      display: none;
+    }
+
+    .navigation__list {
+      position: unset;
+      display: flex;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    z-index: 0;
+  }
 }
 
 .navigation__list {
