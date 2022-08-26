@@ -81,7 +81,6 @@
   @media (min-width: $tablet) {
     min-width: calc(20% - 1px);
     box-shadow: none;
-    flex-grow: 1;
 
     &:nth-child(2) {
       margin-right: 20%;
@@ -124,6 +123,15 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--current {
+    &:focus,
+    &:hover,
+    &:active {
+      color: #ffffff;
+      background-color: #81b3d2;
+    }
   }
 
   @media (min-width: $tablet) {
