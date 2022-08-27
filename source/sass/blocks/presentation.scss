@@ -45,10 +45,10 @@
 .presentation__play-button {
   z-index: 1;
   position: absolute;
-  top: calc(50% - 27px);
-  left: calc(50% - 24px);
-  width: 48px;
-  height: 54px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   content: "";
   padding: 0;
   border: none;
@@ -58,6 +58,33 @@
   background-image: url("../img/play-button.svg");
   opacity: 0.7;
   cursor: pointer;
+
+  &--pause {
+    background-image: none;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: calc(50% - 27px);
+        content: "";
+        width: 16px;
+        height: 54px;
+        background-color: #ffffff;
+      }
+
+      &::before {
+        left: calc(50% - 24px);
+      }
+
+      &::after {
+        left: calc(50% + 8px);
+      }
+    }
+  }
 
   &:focus,
   &:hover {
@@ -72,6 +99,7 @@
 .presentation__video {
   display: block;
   width: 100%;
+  height: auto;
   object-fit: cover;
 
   @media (min-width: $tablet) {
