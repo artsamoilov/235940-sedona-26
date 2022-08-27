@@ -59,33 +59,6 @@
   opacity: 0.7;
   cursor: pointer;
 
-  &--pause {
-    background-image: none;
-    opacity: 0;
-
-    &:hover {
-      opacity: 1;
-
-      &::before,
-      &::after {
-        position: absolute;
-        top: calc(50% - 27px);
-        content: "";
-        width: 16px;
-        height: 54px;
-        background-color: #ffffff;
-      }
-
-      &::before {
-        left: calc(50% - 24px);
-      }
-
-      &::after {
-        left: calc(50% + 8px);
-      }
-    }
-  }
-
   &:focus,
   &:hover {
     opacity: 1;
@@ -93,6 +66,33 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+.presentation__play-button--pause {
+  background-image: none;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: calc(50% - 27px);
+      content: "";
+      width: 16px;
+      height: 54px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      left: calc(50% - 24px);
+    }
+
+    &::after {
+      left: calc(50% + 8px);
+    }
   }
 }
 
