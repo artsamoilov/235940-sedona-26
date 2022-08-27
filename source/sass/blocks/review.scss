@@ -78,14 +78,11 @@
 
   @media (min-width: $tablet) {
     width: 100%;
-    padding: 0;
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop) {
     max-width: $tablet;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
+    flex-direction: row;
   }
 }
 

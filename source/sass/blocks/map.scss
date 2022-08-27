@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.map__iframe {
+  display: block;
+  border: none;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
 .map__static-map {
   display: block;
   width: 100%;
@@ -9,6 +17,7 @@
 }
 
 .map__pin {
+  z-index: 1;
   position: absolute;
   top: calc(50% - 14px);
   left: calc(50% - 14px);
