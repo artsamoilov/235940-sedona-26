@@ -1,5 +1,12 @@
+@import "../global/variables";
+
 .map {
   position: relative;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .map__iframe {

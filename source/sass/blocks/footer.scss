@@ -2,7 +2,6 @@
 
 .footer {
   padding: 20px;
-  background-color: #ffffff;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -17,10 +16,15 @@
 }
 
 .footer__hashtag {
+  margin-top: 10px;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__list {
