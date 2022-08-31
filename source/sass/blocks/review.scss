@@ -2,15 +2,15 @@
 
 .review {
   margin: 0;
-  padding: 30px 0 0;
+  padding: 34px 0 0;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
-    padding: 60px 60px 64px;
+    padding: 64px 60px 72px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 100px;
+    padding-top: 114px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -23,20 +23,36 @@
   line-height: 26px;
   font-weight: 700;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin: 0 auto 30px;
+    margin: 0 auto 22px;
     font-size: 30px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 32px;
   }
 }
 
 .review__subtitle {
-  margin: 0 20px 32px;
+  margin: 0 20px 28px;
   text-align: center;
 
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin: 0 auto 100px;
+    margin: 0 auto 106px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
   }
 }
 
@@ -48,20 +64,19 @@
 }
 
 .review__group-wrapper {
-  padding: 24px 20px 40px;
+  padding: 24px 20px 24px;
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: $tablet) {
     box-sizing: border-box;
     width: 50%;
     margin-bottom: 48px;
-    padding: 0 0 10px;
+    padding: 0;
     border-top: none;
 
     &--wide {
       overflow-x: hidden;
       width: 100%;
-      padding: 0 0 2px;
       margin-bottom: 46px;
     }
 
@@ -69,10 +84,22 @@
       border-right: 1px solid #e5e5e5;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 56px;
+
+    &--wide {
+      margin-bottom: 72px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 48px;
+    }
+  }
 }
 
 .review__footer {
-  padding: 20px;
+  padding: 32px 20px 20px;
   display: flex;
   flex-direction: column;
 
@@ -91,7 +118,7 @@
 }
 
 .review__info {
-  margin: 4px 0;
+  margin: 2px 0;
   align-self: end;
   font-size: 12px;
   line-height: 22px;
@@ -100,5 +127,7 @@
   @media (min-width: $tablet) {
     display: block;
     margin: auto 0 auto auto;
+    padding-top: 8px;
+    font-size: 14px;
   }
 }

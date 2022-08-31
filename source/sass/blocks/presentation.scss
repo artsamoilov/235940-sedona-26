@@ -1,20 +1,19 @@
 @import "../global/variables";
 
 .presentation {
-  padding: 20px 20px 0;
+  padding: 16px 20px 0;
 
   @media (min-width: $tablet) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 16px 60px 50px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 94px;
+    padding-bottom: 92px;
   }
 }
 
 .presentation__title {
-  margin: 0 0 24px;
+  margin: 0 0 28px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -28,13 +27,16 @@
 }
 
 .presentation__subtitle {
-  margin: 0 0 36px;
+  margin: 0 4px 36px;
   text-align: center;
 
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 90px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 88px;
   }
 }
 

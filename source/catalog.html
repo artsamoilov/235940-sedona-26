@@ -11,6 +11,17 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
+
+<svg style="display: none">
+  <symbol id="icon-htmlacademy" viewBox="0 0 36 36">
+    <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-like" viewBox="0 0 32 32">
+    <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
   <div class="page__wrapper">
 
     <!-- Header -->
@@ -49,7 +60,7 @@
       <section class="gallery">
         <h2 class="gallery__title">Фото и видео</h2>
         <p class="gallery__subtitle">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          Не можете решиться на путешествие из-за курса?<br>Фотографии помогут вам забыть о политике и экономике.
         </p>
         <ul class="gallery__list">
           <li class="gallery__item post">
@@ -64,9 +75,9 @@
                 <p class="post__author">Автор фото: Борис</p>
               </div>
               <div class="post__like">
-                <button class="post__like-button" type="button">
-                  <svg class="post__like-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z" fill="#81B3D2"/>
+                <button class="post__like-button" type="button" aria-label="Оценить фотографию">
+                  <svg class="post__like-icon" width="32" height="32" aria-hidden="true">
+                    <use xlink:href="#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Поставить лайк</span>
                 </button>
@@ -86,9 +97,9 @@
                 <p class="post__author">Автор фото: Сергей</p>
               </div>
               <div class="post__like">
-                <button class="post__like-button" type="button">
-                  <svg class="post__like-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z" fill="#81B3D2"/>
+                <button class="post__like-button" type="button" aria-label="Оценить фотографию">
+                  <svg class="post__like-icon" width="32" height="32" aria-hidden="true">
+                    <use xlink:href="#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Поставить лайк</span>
                 </button>
@@ -108,9 +119,9 @@
                 <p class="post__author">Автор фото: Пётр</p>
               </div>
               <div class="post__like">
-                <button class="post__like-button" type="button">
-                  <svg class="post__like-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z" fill="#81B3D2"/>
+                <button class="post__like-button" type="button" aria-label="Оценить фотографию">
+                  <svg class="post__like-icon" width="32" height="32" aria-hidden="true">
+                    <use xlink:href="#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Поставить лайк</span>
                 </button>
@@ -130,9 +141,9 @@
                 <p class="post__author">Автор фото: Антон</p>
               </div>
               <div class="post__like">
-                <button class="post__like-button" type="button">
-                  <svg class="post__like-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z" fill="#81B3D2"/>
+                <button class="post__like-button" type="button" aria-label="Оценить фотографию">
+                  <svg class="post__like-icon" width="32" height="32" aria-hidden="true">
+                    <use xlink:href="#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Поставить лайк</span>
                 </button>
@@ -180,10 +191,10 @@
           </a>
         </li>
       </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
         Разработано
-        <svg class="copyright__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z" fill="black"/>
+        <svg width="36" height="36">
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </footer>

@@ -2,12 +2,11 @@
 
 .footer {
   padding: 20px;
-  background-color: #ffffff;
 
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-    padding: 36px 60px;
+    padding: 26px 60px;
   }
 
   @media (min-width: $desktop) {
@@ -17,17 +16,44 @@
 }
 
 .footer__hashtag {
+  margin-top: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__list {
-  margin: 34px auto 40px;
+  margin: 32px auto 38px;
 
   @media (min-width: $tablet) {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  @media (min-width: $tablet) {
+    margin-right: -4px;
   }
 }

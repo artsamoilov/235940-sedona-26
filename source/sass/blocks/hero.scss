@@ -37,10 +37,26 @@
 
   @media (min-width: $tablet) {
     background-image: url("/img/back-desktop.jpg");
+    background-size: 1200px auto;
     padding: 78px 20px 90px;
+
+    &--inner {
+      padding: 95px 60px 118px;
+
+      .hero__image {
+        height: 78px;
+      }
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/back-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--inner {
+      padding-top: 100px;
+      padding-bottom: 122px;
     }
   }
 }

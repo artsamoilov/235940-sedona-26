@@ -6,11 +6,11 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
-    padding: 60px;
+    padding: 60px 60px 40px;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 0 60px;
+    padding: 100px 0 48px;
   }
 }
 
@@ -23,7 +23,7 @@
 
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin: 0 auto 30px;
+    margin: 0 auto 32px;
     font-size: 30px;
   }
 }
@@ -32,10 +32,17 @@
   margin: 0 20px 44px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 86px;
+
+    br {
+      display: block;
+    }
   }
 }
 
