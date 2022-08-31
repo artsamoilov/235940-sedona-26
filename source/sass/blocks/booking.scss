@@ -8,18 +8,31 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 68px;
+  }
 }
 
 .booking__title {
   margin: 0 0 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet) {
     max-width: 458px;
     margin: 0 auto 32px;
+    font-size: 30px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -29,7 +42,11 @@
 
   @media (min-width: $tablet) {
     max-width: 458px;
-    margin: 0 auto 40px;
+    margin: 0 auto 42px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 46px;
   }
 }
 

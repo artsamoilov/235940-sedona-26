@@ -13,6 +13,7 @@
   background-position: center;
 
   &::after {
+    z-index: 1;
     position: absolute;
     bottom: -21px;
     left: 0;
@@ -32,10 +33,14 @@
       content: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding: 60px 120px 46px;
+  }
 }
 
 .features__title {
-  margin: 0 0 35px;
+  margin: 0 0 38px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -43,7 +48,7 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 28px;
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
