@@ -55,7 +55,7 @@ const copyImages = () => {
 
 // WebP
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpeg,jpg,png}')
+  return gulp.src('source/img/*.{jpeg,jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
@@ -64,7 +64,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/sprite/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
