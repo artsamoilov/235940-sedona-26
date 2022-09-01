@@ -16,18 +16,10 @@
   @media (min-width: $tablet) {
     &--name {
       margin-right: 44px;
-
-      .field-group__title {
-        padding-left: 40px;
-      }
     }
 
     &--contacts {
       margin-left: 44px;
-
-      .field-group__title {
-        margin-left: -24px;
-      }
     }
 
     &--impression,
@@ -137,7 +129,7 @@
 }
 
 .field-group__title {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   padding: 0;
   text-align: center;
   font-size: 18px;
