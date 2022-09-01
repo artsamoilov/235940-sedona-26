@@ -2,12 +2,13 @@
 
 .hero {
   position: relative;
+  padding: 90px 20px 85px;
+  color: #ffffff;
   background-color: #7c97a3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("/img/back-mobile.jpg");
-  padding: 90px 20px 85px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/back-mobile@2x.jpg");
