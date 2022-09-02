@@ -8,10 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
   &--inner {
@@ -33,11 +33,11 @@
     content: "";
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/img/intro-triangle.svg");
+    background-image: url("../img/intro-triangle.svg");
   }
 
   @media (min-width: $tablet) {
-    background-image: url("/img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-size: 1200px auto;
     padding: 78px 20px 90px;
 
@@ -50,7 +50,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-desktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.jpg");
     }
   }
 
