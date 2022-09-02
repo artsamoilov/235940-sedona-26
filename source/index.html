@@ -3,12 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Туристический сайт города Седона">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="img/back-mobile@2x.jpg" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
 
@@ -72,7 +77,7 @@
               <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-              <img class="feature__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Городской пейзаж в Седоне">
+              <img class="feature__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" loading="lazy" width="320" height="260" alt="Городской пейзаж в Седоне">
             </picture>
           </li>
           <li class="features__item feature feature__icon feature__icon--house">
@@ -105,7 +110,7 @@
               <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="feature__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола над каньоном">
+              <img class="feature__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" loading="lazy" width="320" height="260" alt="Мост дьявола над каньоном">
             </picture>
           </li>
           <li class="features__item feature feature--divided">
@@ -144,6 +149,7 @@
         <img class="map__pin" src="img/map-marker.svg" width="27" height="27" alt="Маркер на карте">
         <iframe
           class="map__iframe"
+          title="Карта Аризоны"
           src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1676970.986906555!2d-111.808287!3d34.82269500000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1661554285414!5m2!1sru!2sru"
           width="320"
           height="350"
@@ -157,7 +163,7 @@
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="map__static-map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта Седоны">
+          <img class="map__static-map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" loading="lazy" width="320" height="350" alt="Карта Седоны">
         </picture>
       </section>
     </main>
@@ -191,6 +197,6 @@
     </footer>
 
   </div>
-  <script src="js/script.js"></script>
+  <script defer src="js/script.js"></script>
 </body>
 </html>
