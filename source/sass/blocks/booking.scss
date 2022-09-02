@@ -40,9 +40,17 @@
   margin: 0 0 32px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     max-width: 458px;
     margin: 0 auto 42px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop) {
